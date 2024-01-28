@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "mocha tests/*.test.mjs"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "babel-jest": "^29.7.0",
-    "jest": "^29.7.0"
+    "mocha": "^10.2.0"
   }
 }
