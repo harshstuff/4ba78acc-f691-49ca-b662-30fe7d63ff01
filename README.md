@@ -1,14 +1,24 @@
 # Harsh Coding Challenge
 
-## Node version used for this project v18.17.1
+Welcome to the Harsh Coding Challenge! This project is a command-line application built with Node.js, designed to evaluate various coding tasks.
 
-## Run these to start with the project.
-### npm ci
-### node src/index.js
+## System Requirements
+- Node.js v18.17.1
 
+## Installation
 
-## Run test
+Install the necessary dependencies with the following command:
 
-### npm test
+- npm ci
 
-#### Ctrl + C to exit the program.
+## Running the Application
+
+Install the necessary dependencies with the following command:
+
+- node src/index.js
+
+## Testing
+
+Run the test suite using:
+
+- npm test
