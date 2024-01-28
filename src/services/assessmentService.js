@@ -7,8 +7,8 @@ function parseCustomDateForAssementSorting(dateString) {
 }
 
 // Get latest completed assement of any student by student ID.
-export function findLatestCompletedAssessment(studentId) {
-    const responses = loadJsonFile('student-responses.json');
+export function findLatestCompletedAssessment(studentId, file="student-responses.json") {
+    const responses = loadJsonFile(file);
     const completedAssessments = responses.filter(response => response.student.id === studentId && response.completed);
     completedAssessments.sort((a, b) => parseCustomDateForAssementSorting(b.completed) - parseCustomDateForAssementSorting(a.completed));
     // console.log(completedAssessments);

@@ -33,7 +33,7 @@ async function main() {
 
   if (!availableStudentIds.includes(answers.studentId)) {
     console.log(
-      `Wrong input! We only have reports available for: ${availableStudentIds.join(
+      `Sorry! We only have reports available for: ${availableStudentIds.join(
         ", "
       )}`
     );

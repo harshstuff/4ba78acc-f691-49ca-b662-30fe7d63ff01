@@ -2,9 +2,16 @@ import fs from "fs";
 import path from "path";
 
 export function loadJsonFile(fileName) {
-  const filePath = path.join(path.resolve(), "data", fileName);
-  return JSON.parse(fs.readFileSync(filePath, "utf8"));
+  try {
+    const filePath = path.join(path.resolve(), "data", fileName);
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    return JSON.parse(fileContent);
+  } catch (error) {
+    console.error(`Error loading file ${fileName}:`, error.message);
+    return null;
+  }
 }
+
 
 // Convert to the desired date as per requirement.
 export function formatDate(dateString) {
