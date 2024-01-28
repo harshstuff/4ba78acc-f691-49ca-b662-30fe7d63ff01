@@ -6,7 +6,7 @@ import {
 } from "./services/assessmentService.js";
 import { loadJsonFile } from "./utils/dataLoader.js";
 
-// Returns the list of available students.
+// Returns the array of available students.
 function getAvailableStudents() {
   const students = loadJsonFile("students.json");
   return students.map((student) => student.id);
@@ -52,7 +52,6 @@ async function main() {
 
   console.log("\n``````````````````````````````\n");
 
-  // Call main again to create a loop
   main();
 }
 
